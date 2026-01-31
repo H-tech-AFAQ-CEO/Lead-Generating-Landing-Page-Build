@@ -1,0 +1,2223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primary Maths Tutoring Canberra | Boost Confidence & Results</title>
+    <meta name="description" content="Expert primary maths tutoring in Canberra. 11 lessons for $55/lesson + free assessment. Build confidence, master foundations, see real results.">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Premium Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+    <style>
+        /* ========================================
+           CSS VARIABLES & RESET
+        ======================================== */
+        :root {
+            --ct-green: #4fa84b;
+            --ct-blue: #205ca4;
+            --ct-yellow: #f4cc23;
+            --ct-mint: #eafce3;
+            --ct-softgreen: #9bc89b;
+            
+            --ink: #0f172a;
+            --muted: #475569;
+            --card: #ffffff;
+            
+            --gradient-overlay: linear-gradient(135deg, rgba(32, 92, 164, 0.92) 0%, rgba(79, 168, 75, 0.88) 100%);
+            --glass-bg: rgba(255, 255, 255, 0.95);
+            --glass-bg-light: rgba(255, 255, 255, 0.1);
+            --shadow-sm: 0 2px 8px rgba(15, 23, 42, 0.08);
+            --shadow-md: 0 4px 20px rgba(15, 23, 42, 0.12);
+            --shadow-lg: 0 8px 30px rgba(15, 23, 42, 0.16);
+            --shadow-xl: 0 20px 40px rgba(15, 23, 42, 0.2);
+            --shadow-glow: 0 0 30px rgba(79, 168, 75, 0.3);
+            --shadow-glow-blue: 0 0 30px rgba(32, 92, 164, 0.3);
+            
+            --spacing-xs: 0.5rem;
+            --spacing-sm: 1rem;
+            --spacing-md: 1.5rem;
+            --spacing-lg: 2rem;
+            --spacing-xl: 3rem;
+            --spacing-2xl: 4rem;
+            
+            --border-radius: 12px;
+            --border-radius-lg: 20px;
+            
+            --transition-base: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            --transition-bounce: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+            --transition-smooth: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+            --transition-elastic: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            color: var(--ink);
+            line-height: 1.6;
+            overflow-x: hidden;
+            background: #f8fafc;
+        }
+        
+        /* ========================================
+           TYPOGRAPHY
+        ======================================== */
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.2;
+            font-weight: 700;
+        }
+        
+        h1 {
+            font-size: clamp(2rem, 5vw, 3.5rem);
+            font-weight: 800;
+            margin-bottom: var(--spacing-md);
+        }
+        
+        h2 {
+            font-size: clamp(1.75rem, 4vw, 2.5rem);
+            margin-bottom: var(--spacing-md);
+        }
+        
+        h3 {
+            font-size: clamp(1.25rem, 3vw, 1.75rem);
+            margin-bottom: var(--spacing-sm);
+        }
+        
+        p {
+            font-size: clamp(1rem, 2vw, 1.125rem);
+            margin-bottom: var(--spacing-sm);
+            color: var(--muted);
+        }
+        
+        /* ========================================
+           ENHANCED BUTTONS WITH PREMIUM EFFECTS
+        ======================================== */
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+            padding: 1rem 2rem;
+            border-radius: var(--border-radius);
+            font-weight: 600;
+            font-size: 1.125rem;
+            text-decoration: none;
+            border: none;
+            cursor: pointer;
+            transition: var(--transition-smooth);
+            position: relative;
+            overflow: hidden;
+            font-family: 'Poppins', sans-serif;
+            transform-style: preserve-3d;
+            perspective: 1000px;
+        }
+        
+        .btn::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 0;
+            height: 0;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.3);
+            transform: translate(-50%, -50%);
+            transition: width 0.6s, height 0.6s;
+        }
+        
+        .btn:hover::before {
+            width: 300px;
+            height: 300px;
+        }
+        
+        .btn-primary {
+            background: linear-gradient(135deg, var(--ct-green) 0%, var(--ct-blue) 100%);
+            color: white;
+            box-shadow: 0 4px 15px rgba(79, 168, 75, 0.4);
+            position: relative;
+        }
+        
+        .btn-primary::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(135deg, var(--ct-blue) 0%, var(--ct-green) 100%);
+            border-radius: var(--border-radius);
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+        
+        .btn-primary:hover {
+            transform: translateY(-3px) rotateX(5deg);
+            box-shadow: 0 8px 25px rgba(79, 168, 75, 0.5), var(--shadow-glow);
+        }
+        
+        .btn-primary:hover::after {
+            opacity: 1;
+        }
+        
+        .btn-secondary {
+            background: white;
+            color: var(--ct-blue);
+            border: 2px solid var(--ct-blue);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .btn-secondary::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: var(--ct-blue);
+            transition: left 0.3s;
+            z-index: 0;
+        }
+        
+        .btn-secondary:hover {
+            color: white;
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(32, 92, 164, 0.3);
+        }
+        
+        .btn-secondary:hover::before {
+            left: 0;
+        }
+        
+        .btn-secondary * {
+            position: relative;
+            z-index: 1;
+        }
+        
+        .btn-icon {
+            position: relative;
+            z-index: 2;
+        }
+        
+        /* Enhanced pulse animation */
+        @keyframes pulse {
+            0%, 100% {
+                box-shadow: 0 4px 15px rgba(79, 168, 75, 0.4);
+                transform: scale(1);
+            }
+            50% {
+                box-shadow: 0 4px 25px rgba(79, 168, 75, 0.6), 0 0 0 10px rgba(79, 168, 75, 0.1);
+                transform: scale(1.02);
+            }
+        }
+        
+        .btn-pulse {
+            animation: pulse 2s infinite;
+        }
+        
+        /* Floating animation */
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+        }
+        
+        .btn-float {
+            animation: float 3s ease-in-out infinite;
+        }
+        
+        /* ========================================
+           ENHANCED HERO SECTION WITH PREMIUM EFFECTS
+        ======================================== */
+        .hero {
+            position: relative;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: var(--spacing-xl) var(--spacing-md);
+            background: 
+                var(--gradient-overlay),
+                url('https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=1600&q=80') center/cover no-repeat;
+            overflow: hidden;
+        }
+        
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: radial-gradient(circle at 30% 50%, rgba(244, 204, 35, 0.15) 0%, transparent 50%);
+            pointer-events: none;
+        }
+        
+        .hero::after {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(255, 255, 255, 0.05) 0%, transparent 70%);
+            animation: rotate 30s linear infinite;
+            pointer-events: none;
+        }
+        
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            max-width: 800px;
+            text-align: center;
+            color: white;
+        }
+        
+        .hero-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: var(--glass-bg);
+            color: var(--ct-blue);
+            padding: 0.75rem 2rem;
+            border-radius: 50px;
+            font-weight: 600;
+            font-size: 0.875rem;
+            margin-bottom: var(--spacing-md);
+            backdrop-filter: blur(15px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+            animation: slideDown 0.8s ease-out;
+        }
+        
+        @keyframes slideDown {
+            from {
+                opacity: 0;
+                transform: translateY(-30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        @keyframes shimmer {
+            0% {
+                background-position: -1000px 0;
+            }
+            100% {
+                background-position: 1000px 0;
+            }
+        }
+        
+        .badge-shimmer {
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .badge-shimmer::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.4), transparent);
+            background-size: 1000px 100%;
+            animation: shimmer 3s infinite;
+        }
+        
+        .hero h1 {
+            color: white;
+            text-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+            animation: fadeInUp 0.8s ease-out 0.2s both;
+            font-weight: 800;
+            line-height: 1.1;
+        }
+        
+        .hero p {
+            color: rgba(255, 255, 255, 0.95);
+            font-size: 1.25rem;
+            margin-bottom: var(--spacing-lg);
+            animation: fadeInUp 0.8s ease-out 0.4s both;
+            text-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+        }
+        
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(40px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .hero-cta {
+            display: flex;
+            gap: var(--spacing-sm);
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-bottom: var(--spacing-lg);
+            animation: fadeInUp 0.8s ease-out 0.6s both;
+        }
+        
+        .trust-line {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: var(--spacing-sm);
+            color: rgba(255, 255, 255, 0.9);
+            font-size: 0.95rem;
+            animation: fadeInUp 0.8s ease-out 0.8s both;
+        }
+        
+        .stars {
+            color: var(--ct-yellow);
+            display: flex;
+            gap: 0.25rem;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+        }
+        
+        /* Particle effect for hero */
+        .hero-particles {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            z-index: 1;
+        }
+        
+        .particle {
+            position: absolute;
+            width: 4px;
+            height: 4px;
+            background: rgba(255, 255, 255, 0.6);
+            border-radius: 50%;
+            animation: float-particle 10s infinite linear;
+        }
+        
+        @keyframes float-particle {
+            0% {
+                transform: translateY(100vh) rotate(0deg);
+                opacity: 0;
+            }
+            10% {
+                opacity: 1;
+            }
+            90% {
+                opacity: 1;
+            }
+            100% {
+                transform: translateY(-100vh) rotate(720deg);
+                opacity: 0;
+            }
+        }
+        
+        /* ========================================
+           CONTAINER & SECTIONS
+        ======================================== */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 var(--spacing-md);
+        }
+        
+        .section {
+            padding: var(--spacing-2xl) 0;
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+        }
+        
+        .section.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        
+        .section-header {
+            text-align: center;
+            margin-bottom: var(--spacing-xl);
+        }
+        
+        .section-subtitle {
+            color: var(--ct-green);
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            font-size: 0.875rem;
+            margin-bottom: var(--spacing-xs);
+        }
+        
+        /* ========================================
+           RESULTS SECTION
+        ======================================== */
+        .results-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: var(--spacing-lg);
+            margin-top: var(--spacing-xl);
+        }
+        
+        .result-card {
+            background: white;
+            border-radius: var(--border-radius-lg);
+            padding: var(--spacing-xl);
+            text-align: center;
+            box-shadow: var(--shadow-md);
+            transition: var(--transition-smooth);
+            position: relative;
+            overflow: hidden;
+            border: 2px solid transparent;
+        }
+        
+        .result-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, var(--ct-green), var(--ct-blue));
+            transform: scaleX(0);
+            transition: transform 0.3s;
+        }
+        
+        .result-card:hover {
+            transform: translateY(-10px);
+            box-shadow: var(--shadow-xl), var(--shadow-glow);
+            border-color: var(--ct-mint);
+        }
+        
+        .result-card:hover::before {
+            transform: scaleX(1);
+        }
+        
+        .result-icon {
+            width: 80px;
+            height: 80px;
+            background: linear-gradient(135deg, var(--ct-green), var(--ct-blue));
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            margin: 0 auto var(--spacing-md);
+            position: relative;
+            animation: float 3s ease-in-out infinite;
+        }
+        
+        .result-number {
+            font-size: 3rem;
+            font-weight: 800;
+            color: var(--ct-blue);
+            margin-bottom: var(--spacing-xs);
+            font-family: 'Poppins', sans-serif;
+            line-height: 1;
+        }
+        
+        .result-label {
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: var(--ink);
+            margin-bottom: var(--spacing-sm);
+        }
+        
+        .result-card p {
+            color: var(--muted);
+            margin: 0;
+        }
+        
+        /* ========================================
+           ENHANCED OFFER CARD
+        ======================================== */
+        .offer-card {
+            background: linear-gradient(135deg, var(--ct-blue) 0%, var(--ct-green) 100%);
+            border-radius: var(--border-radius-lg);
+            padding: var(--spacing-xl);
+            color: white;
+            box-shadow: var(--shadow-xl), var(--shadow-glow-blue);
+            position: relative;
+            overflow: hidden;
+            margin: calc(-1 * var(--spacing-xl)) auto var(--spacing-2xl);
+            max-width: 900px;
+            transform-style: preserve-3d;
+            transition: var(--transition-smooth);
+        }
+        
+        .offer-card:hover {
+            transform: translateY(-5px) rotateX(2deg);
+            box-shadow: 0 25px 50px rgba(32, 92, 164, 0.3), var(--shadow-glow-blue);
+        }
+        
+        .offer-card::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -20%;
+            width: 400px;
+            height: 400px;
+            background: radial-gradient(circle, rgba(255, 255, 255, 0.15) 0%, transparent 70%);
+            border-radius: 50%;
+            animation: float 6s ease-in-out infinite;
+        }
+        
+        .offer-card::after {
+            content: '';
+            position: absolute;
+            bottom: -30%;
+            left: -10%;
+            width: 300px;
+            height: 300px;
+            background: radial-gradient(circle, rgba(244, 204, 35, 0.1) 0%, transparent 70%);
+            border-radius: 50%;
+            animation: float 8s ease-in-out infinite reverse;
+        }
+        
+        .offer-content {
+            position: relative;
+            z-index: 1;
+        }
+        
+        .offer-header {
+            text-align: center;
+            margin-bottom: var(--spacing-lg);
+        }
+        
+        .offer-title {
+            font-size: 2rem;
+            margin-bottom: var(--spacing-sm);
+        }
+        
+        .offer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: var(--spacing-lg);
+            margin-bottom: var(--spacing-lg);
+        }
+        
+        .offer-item {
+            background: rgba(255, 255, 255, 0.15);
+            backdrop-filter: blur(10px);
+            border-radius: var(--border-radius);
+            padding: var(--spacing-md);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            transition: var(--transition-base);
+        }
+        
+        .offer-item:hover {
+            background: rgba(255, 255, 255, 0.25);
+            transform: translateY(-5px);
+        }
+        
+        .offer-price {
+            font-size: 3rem;
+            font-weight: 800;
+            font-family: 'Poppins', sans-serif;
+            line-height: 1;
+            margin-bottom: 0.5rem;
+        }
+        
+        .offer-price-small {
+            font-size: 1.25rem;
+            opacity: 0.9;
+        }
+        
+        .offer-features {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .offer-features li {
+            padding: 0.5rem 0;
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+        
+        .offer-features i {
+            color: var(--ct-yellow);
+            font-size: 1.25rem;
+        }
+        
+        /* ========================================
+           SKILLS TIMELINE SECTION
+        ======================================== */
+        .skills-timeline {
+            max-width: 800px;
+            margin: 0 auto;
+            position: relative;
+            padding: var(--spacing-lg) 0;
+        }
+        
+        .skills-timeline::before {
+            content: '';
+            position: absolute;
+            left: 50%;
+            top: 0;
+            bottom: 0;
+            width: 4px;
+            background: linear-gradient(180deg, var(--ct-green), var(--ct-blue));
+            transform: translateX(-50%);
+            border-radius: 2px;
+        }
+        
+        .skill-stage {
+            display: flex;
+            align-items: center;
+            margin-bottom: var(--spacing-xl);
+            position: relative;
+        }
+        
+        .skill-stage:nth-child(even) {
+            flex-direction: row-reverse;
+        }
+        
+        .stage-number {
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(135deg, var(--ct-green), var(--ct-blue));
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            font-weight: 800;
+            position: relative;
+            z-index: 2;
+            box-shadow: var(--shadow-lg), var(--shadow-glow);
+            margin: 0 var(--spacing-lg);
+        }
+        
+        .stage-content {
+            flex: 1;
+            background: white;
+            padding: var(--spacing-lg);
+            border-radius: var(--border-radius-lg);
+            box-shadow: var(--shadow-md);
+            position: relative;
+            transition: var(--transition-smooth);
+            border: 2px solid transparent;
+        }
+        
+        .stage-content:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-xl);
+            border-color: var(--ct-mint);
+        }
+        
+        .stage-content h3 {
+            color: var(--ct-blue);
+            margin-bottom: var(--spacing-sm);
+            font-size: 1.5rem;
+        }
+        
+        .stage-content p {
+            color: var(--muted);
+            margin-bottom: var(--spacing-md);
+        }
+        
+        .stage-icon {
+            position: absolute;
+            top: var(--spacing-md);
+            right: var(--spacing-md);
+            width: 40px;
+            height: 40px;
+            background: var(--ct-mint);
+            color: var(--ct-green);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.25rem;
+        }
+        
+        @media (max-width: 768px) {
+            .skills-timeline::before {
+                left: 30px;
+            }
+            
+            .skill-stage,
+            .skill-stage:nth-child(even) {
+                flex-direction: row;
+                padding-left: 60px;
+            }
+            
+            .stage-number {
+                position: absolute;
+                left: 0;
+                margin: 0;
+            }
+        }
+        
+        /* ========================================
+           ENHANCED HOW IT WORKS
+        ======================================== */
+        .steps-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: var(--spacing-lg);
+            position: relative;
+        }
+        
+        .step-card {
+            background: white;
+            border-radius: var(--border-radius-lg);
+            padding: var(--spacing-lg);
+            box-shadow: var(--shadow-md);
+            position: relative;
+            transition: var(--transition-smooth);
+            overflow: hidden;
+            border: 2px solid transparent;
+        }
+        
+        .step-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, var(--ct-green), var(--ct-blue));
+            transform: scaleX(0);
+            transition: transform 0.3s;
+        }
+        
+        .step-card:hover {
+            transform: translateY(-10px) rotateX(2deg);
+            box-shadow: var(--shadow-xl), var(--shadow-glow);
+            border-color: var(--ct-mint);
+        }
+        
+        .step-card:hover::before {
+            transform: scaleX(1);
+        }
+        
+        .step-card:hover .step-number {
+            transform: scale(1.1) rotate(5deg);
+        }
+        
+        .step-number {
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(135deg, var(--ct-green), var(--ct-blue));
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            font-weight: 800;
+            margin-bottom: var(--spacing-md);
+            position: relative;
+            transition: var(--transition-smooth);
+            box-shadow: var(--shadow-md), var(--shadow-glow);
+        }
+        
+        .step-number::after {
+            content: '';
+            position: absolute;
+            top: -5px;
+            left: -5px;
+            right: -5px;
+            bottom: -5px;
+            border: 2px solid var(--ct-mint);
+            border-radius: 50%;
+            animation: pulse-border 2s infinite;
+        }
+        
+        @keyframes pulse-border {
+            0%, 100% {
+                opacity: 1;
+                transform: scale(1);
+            }
+            50% {
+                opacity: 0.5;
+                transform: scale(1.05);
+            }
+        }
+        
+        .step-icon {
+            font-size: 2.5rem;
+            color: var(--ct-blue);
+            margin-bottom: var(--spacing-sm);
+            transition: var(--transition-smooth);
+        }
+        
+        .step-card:hover .step-icon {
+            transform: scale(1.2);
+            color: var(--ct-green);
+        }
+        
+        /* ========================================
+           WHAT YOU GET
+        ======================================== */
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: var(--spacing-md);
+        }
+        
+        .feature-card {
+            background: white;
+            border-radius: var(--border-radius);
+            padding: var(--spacing-lg);
+            box-shadow: var(--shadow-sm);
+            border-left: 4px solid var(--ct-green);
+            transition: var(--transition-base);
+        }
+        
+        .feature-card:hover {
+            box-shadow: var(--shadow-md);
+            border-left-color: var(--ct-blue);
+        }
+        
+        .feature-icon {
+            width: 50px;
+            height: 50px;
+            background: var(--ct-mint);
+            color: var(--ct-green);
+            border-radius: var(--border-radius);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            margin-bottom: var(--spacing-sm);
+        }
+        
+        /* ========================================
+           TESTIMONIALS
+        ======================================== */
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: var(--spacing-lg);
+        }
+        
+        .testimonial-card {
+            background: white;
+            border-radius: var(--border-radius-lg);
+            padding: var(--spacing-lg);
+            box-shadow: var(--shadow-md);
+            position: relative;
+        }
+        
+        .testimonial-card::before {
+            content: '"';
+            position: absolute;
+            top: -10px;
+            left: 20px;
+            font-size: 6rem;
+            color: var(--ct-mint);
+            font-family: Georgia, serif;
+            line-height: 1;
+        }
+        
+        .testimonial-content {
+            position: relative;
+            z-index: 1;
+            margin-bottom: var(--spacing-md);
+            font-style: italic;
+            color: var(--ink);
+        }
+        
+        .testimonial-author {
+            display: flex;
+            align-items: center;
+            gap: var(--spacing-sm);
+        }
+        
+        .author-avatar {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, var(--ct-blue), var(--ct-green));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: 700;
+            font-size: 1.25rem;
+        }
+        
+        .author-info strong {
+            display: block;
+            color: var(--ink);
+        }
+        
+        .author-info small {
+            color: var(--muted);
+        }
+        
+        .testimonial-rating {
+            display: flex;
+            gap: 0.25rem;
+            color: var(--ct-yellow);
+            margin-bottom: var(--spacing-sm);
+        }
+        
+        /* ========================================
+           GUARANTEE SECTION
+        ======================================== */
+        .guarantee-box {
+            background: white;
+            border-radius: var(--border-radius-lg);
+            padding: var(--spacing-2xl);
+            text-align: center;
+            box-shadow: var(--shadow-lg);
+            border: 3px solid var(--ct-green);
+            position: relative;
+            overflow: hidden;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .guarantee-box::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(79, 168, 75, 0.05) 0%, transparent 70%);
+            animation: rotate 20s linear infinite;
+        }
+        
+        .guarantee-icon {
+            width: 100px;
+            height: 100px;
+            background: linear-gradient(135deg, var(--ct-green), var(--ct-blue));
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 3rem;
+            margin: 0 auto var(--spacing-lg);
+            position: relative;
+            z-index: 1;
+            box-shadow: var(--shadow-lg), var(--shadow-glow);
+            animation: float 4s ease-in-out infinite;
+        }
+        
+        .guarantee-box h2 {
+            color: var(--ct-green);
+            margin-bottom: var(--spacing-md);
+            position: relative;
+            z-index: 1;
+        }
+        
+        .guarantee-box p {
+            color: var(--muted);
+            margin-bottom: var(--spacing-lg);
+            position: relative;
+            z-index: 1;
+        }
+        
+        .guarantee-features {
+            display: flex;
+            justify-content: center;
+            gap: var(--spacing-lg);
+            flex-wrap: wrap;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .guarantee-feature {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--ct-green);
+            font-weight: 600;
+        }
+        
+        .guarantee-feature i {
+            font-size: 1.25rem;
+        }
+        
+        /* ========================================
+           ENHANCED FAQ ACCORDION
+        ======================================== */
+        .faq-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .faq-item {
+            background: white;
+            border-radius: var(--border-radius);
+            margin-bottom: var(--spacing-sm);
+            box-shadow: var(--shadow-sm);
+            overflow: hidden;
+            transition: var(--transition-smooth);
+            border: 2px solid transparent;
+        }
+        
+        .faq-item:hover {
+            box-shadow: var(--shadow-md);
+            border-color: var(--ct-mint);
+        }
+        
+        .faq-item.active {
+            box-shadow: var(--shadow-lg), var(--shadow-glow);
+            border-color: var(--ct-green);
+        }
+        
+        .faq-question {
+            width: 100%;
+            text-align: left;
+            padding: var(--spacing-md);
+            background: none;
+            border: none;
+            font-size: 1.125rem;
+            font-weight: 600;
+            color: var(--ink);
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: var(--transition-smooth);
+            position: relative;
+        }
+        
+        .faq-question::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            width: 4px;
+            background: linear-gradient(180deg, var(--ct-green), var(--ct-blue));
+            transform: scaleY(0);
+            transition: transform 0.3s;
+        }
+        
+        .faq-item.active .faq-question::before {
+            transform: scaleY(1);
+        }
+        
+        .faq-question:hover {
+            background: var(--ct-mint);
+            padding-left: calc(var(--spacing-md) + 8px);
+        }
+        
+        .faq-icon {
+            color: var(--ct-green);
+            transition: var(--transition-elastic);
+            font-size: 1.25rem;
+        }
+        
+        .faq-item.active .faq-icon {
+            transform: rotate(180deg);
+            color: var(--ct-blue);
+        }
+        
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        
+        .faq-answer-content {
+            padding: 0 var(--spacing-md) var(--spacing-md);
+            color: var(--muted);
+            line-height: 1.7;
+        }
+        
+        .faq-item.active .faq-answer {
+            max-height: 500px;
+        }
+        
+        /* ========================================
+           FINAL CTA
+        ======================================== */
+        .cta-section {
+            background: linear-gradient(135deg, var(--ct-blue) 0%, var(--ct-green) 100%);
+            color: white;
+            text-align: center;
+            padding: var(--spacing-2xl);
+            border-radius: var(--border-radius-lg);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .cta-section::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(255, 255, 255, 0.1) 0%, transparent 70%);
+            animation: rotate 20s linear infinite;
+        }
+        
+        @keyframes rotate {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+        
+        .cta-content {
+            position: relative;
+            z-index: 1;
+        }
+        
+        .cta-section h2 {
+            color: white;
+            margin-bottom: var(--spacing-md);
+        }
+        
+        .cta-section p {
+            color: rgba(255, 255, 255, 0.95);
+            font-size: 1.25rem;
+            margin-bottom: var(--spacing-lg);
+        }
+        
+        /* ========================================
+           STICKY CTA BUTTON
+        ======================================== */
+        .sticky-cta {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: white;
+            padding: var(--spacing-sm);
+            box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+            transform: translateY(100%);
+            transition: transform 0.3s ease-out;
+        }
+        
+        .sticky-cta.show {
+            transform: translateY(0);
+        }
+        
+        .sticky-cta-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: var(--spacing-sm);
+            padding: 0 var(--spacing-md);
+        }
+        
+        .sticky-cta-text {
+            font-weight: 600;
+            color: var(--ink);
+        }
+        
+        /* ========================================
+           FOOTER
+        ======================================== */
+        .footer {
+            background: var(--ink);
+            color: white;
+            padding: var(--spacing-lg) 0;
+            margin-top: var(--spacing-2xl);
+        }
+        
+        .footer-content {
+            text-align: center;
+        }
+        
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: var(--spacing-md);
+            margin-bottom: var(--spacing-sm);
+            flex-wrap: wrap;
+        }
+        
+        .footer-links a {
+            color: rgba(255, 255, 255, 0.8);
+            text-decoration: none;
+            transition: var(--transition-base);
+        }
+        
+        .footer-links a:hover {
+            color: var(--ct-yellow);
+        }
+        
+        .terms {
+            font-size: 0.875rem;
+            color: rgba(255, 255, 255, 0.6);
+            max-width: 900px;
+            margin: var(--spacing-md) auto 0;
+            line-height: 1.8;
+        }
+        
+        /* ========================================
+           FORM MODAL
+        ======================================== */
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(15, 23, 42, 0.8);
+            backdrop-filter: blur(5px);
+            z-index: 2000;
+            padding: var(--spacing-md);
+            overflow-y: auto;
+        }
+        
+        .modal.active {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            animation: fadeIn 0.3s ease-out;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        
+        .modal-content {
+            background: white;
+            border-radius: var(--border-radius-lg);
+            max-width: 600px;
+            width: 100%;
+            padding: var(--spacing-xl);
+            position: relative;
+            animation: slideUp 0.3s ease-out;
+        }
+        
+        @keyframes slideUp {
+            from {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .modal-close {
+            position: absolute;
+            top: var(--spacing-md);
+            right: var(--spacing-md);
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            color: var(--muted);
+            cursor: pointer;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            transition: var(--transition-base);
+        }
+        
+        .modal-close:hover {
+            background: var(--ct-mint);
+            color: var(--ct-green);
+        }
+        
+        .form-group {
+            margin-bottom: var(--spacing-md);
+        }
+        
+        .form-label {
+            display: block;
+            margin-bottom: var(--spacing-xs);
+            font-weight: 600;
+            color: var(--ink);
+        }
+        
+        .form-input,
+        .form-select,
+        .form-textarea {
+            width: 100%;
+            padding: 0.875rem;
+            border: 2px solid #e2e8f0;
+            border-radius: var(--border-radius);
+            font-size: 1rem;
+            font-family: 'Inter', sans-serif;
+            transition: var(--transition-base);
+        }
+        
+        .form-input:focus,
+        .form-select:focus,
+        .form-textarea:focus {
+            outline: none;
+            border-color: var(--ct-green);
+            box-shadow: 0 0 0 3px rgba(79, 168, 75, 0.1);
+        }
+        
+        .form-textarea {
+            resize: vertical;
+            min-height: 120px;
+        }
+        
+        .success-state {
+            display: none;
+            text-align: center;
+            padding: var(--spacing-xl);
+        }
+        
+        .success-state.active {
+            display: block;
+        }
+        
+        .success-icon {
+            width: 80px;
+            height: 80px;
+            background: var(--ct-mint);
+            color: var(--ct-green);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2.5rem;
+            margin: 0 auto var(--spacing-md);
+        }
+        
+        /* ========================================
+           RESPONSIVE
+        ======================================== */
+        @media (max-width: 768px) {
+            .hero {
+                min-height: 90vh;
+                padding: var(--spacing-lg) var(--spacing-md);
+            }
+            
+            .hero-cta {
+                flex-direction: column;
+            }
+            
+            .btn {
+                width: 100%;
+            }
+            
+            .offer-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .steps-grid,
+            .features-grid,
+            .testimonials-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .sticky-cta-content {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .sticky-cta-text {
+                font-size: 0.875rem;
+            }
+        }
+        
+        /* ========================================
+           UTILITIES
+        ======================================== */
+        .text-center {
+            text-align: center;
+        }
+        
+        .mt-1 { margin-top: var(--spacing-sm); }
+        .mt-2 { margin-top: var(--spacing-md); }
+        .mb-1 { margin-bottom: var(--spacing-sm); }
+        .mb-2 { margin-bottom: var(--spacing-md); }
+        
+        .badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.5rem 1rem;
+            background: var(--ct-mint);
+            color: var(--ct-green);
+            border-radius: 50px;
+            font-weight: 600;
+            font-size: 0.875rem;
+        }
+    </style>
+</head>
+<body>
+    
+    <!-- HERO SECTION -->
+    <section class="hero">
+        <div class="hero-particles" id="heroParticles"></div>
+        <div class="hero-content">
+            <div class="hero-badge badge-shimmer">
+                <i class="fas fa-star"></i>
+                4.9/5 from 200+ Canberra families
+            </div>
+            <h1>Your Child Will Love Maths Again</h1>
+            <p>Expert primary maths tutoring that builds confidence, strengthens foundations, and delivers real results. Watch your child go from "I can't" to "I did it!"</p>
+            <div class="hero-cta">
+                <button class="btn btn-primary btn-pulse" onclick="openModal()">
+                    <i class="fas fa-calendar-check btn-icon"></i>
+                    Book Free Assessment
+                </button>
+                <a href="tel:+61412345678" class="btn btn-secondary">
+                    <i class="fas fa-phone btn-icon"></i>
+                    Call Now
+                </a>
+            </div>
+            <div class="trust-line">
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <span>Trusted by Canberra families since 2015</span>
+            </div>
+        </div>
+    </section>
+    
+    <!-- RESULTS SECTION -->
+    <section class="section" style="background: linear-gradient(135deg, var(--ct-mint) 0%, white 100%);">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <div class="section-subtitle">Real Results</div>
+                <h2>Why Canberra Parents Choose Us</h2>
+            </div>
+            <div class="results-grid">
+                <div class="result-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="result-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <div class="result-number">87%</div>
+                    <div class="result-label">Grade Improvement</div>
+                    <p>Students see measurable improvement within one term</p>
+                </div>
+                <div class="result-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="result-icon">
+                        <i class="fas fa-smile"></i>
+                    </div>
+                    <div class="result-number">94%</div>
+                    <div class="result-label">Confidence Boost</div>
+                    <p>Parents report increased confidence in maths</p>
+                </div>
+                <div class="result-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="result-icon">
+                        <i class="fas fa-award"></i>
+                    </div>
+                    <div class="result-number">4.9/5</div>
+                    <div class="result-label">Parent Rating</div>
+                    <p>Consistently high satisfaction from families</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- OFFER CARD -->
+    <div class="container">
+        <div class="offer-card">
+            <div class="offer-content">
+                <div class="offer-header">
+                    <h2 class="offer-title">Limited-Time Term Offer</h2>
+                    <p style="color: rgba(255, 255, 255, 0.95); margin: 0;">Lock in expert tutoring at incredible value</p>
+                </div>
+                <div class="offer-grid">
+                    <div class="offer-item">
+                        <div class="offer-price">$55<span class="offer-price-small">/lesson</span></div>
+                        <h3 style="color: white; font-size: 1.25rem;">11 Lesson Package</h3>
+                        <ul class="offer-features">
+                            <li><i class="fas fa-check-circle"></i> One full school term</li>
+                            <li><i class="fas fa-check-circle"></i> 1-on-1 personalized tutoring</li>
+                            <li><i class="fas fa-check-circle"></i> Matched to your child</li>
+                            <li><i class="fas fa-check-circle"></i> Progress tracking included</li>
+                        </ul>
+                    </div>
+                    <div class="offer-item">
+                        <div class="offer-price">FREE</div>
+                        <h3 style="color: white; font-size: 1.25rem;">Assessment Included</h3>
+                        <ul class="offer-features">
+                            <li><i class="fas fa-check-circle"></i> Identify gaps & strengths</li>
+                            <li><i class="fas fa-check-circle"></i> Create custom learning plan</li>
+                            <li><i class="fas fa-check-circle"></i> Meet your tutor first</li>
+                            <li><i class="fas fa-check-circle"></i> No obligation to continue</li>
+                        </ul>
+                    </div>
+                    <div class="offer-item">
+                        <div class="offer-price">+$55</div>
+                        <h3 style="color: white; font-size: 1.25rem;">Written Report (Optional)</h3>
+                        <ul class="offer-features">
+                            <li><i class="fas fa-check-circle"></i> Detailed assessment findings</li>
+                            <li><i class="fas fa-check-circle"></i> Personalized recommendations</li>
+                            <li><i class="fas fa-check-circle"></i> Goal setting roadmap</li>
+                            <li><i class="fas fa-check-circle"></i> Share with teachers</li>
+                        </ul>
+                    </div>
+                </div>
+                <div style="text-align: center;">
+                    <button class="btn btn-secondary" onclick="openModal()">
+                        <i class="fas fa-clipboard-check"></i>
+                        Get Started Today
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- SKILLS PROGRESSION SECTION -->
+    <section class="section" style="background: #f8fafc;">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <div class="section-subtitle">Learning Journey</div>
+                <h2>Maths Skills Progression</h2>
+                <p style="max-width: 600px; margin: 0 auto;">From number basics to problem-solving confidence</p>
+            </div>
+            <div class="skills-timeline">
+                <div class="skill-stage" data-aos="fade-right" data-aos-delay="100">
+                    <div class="stage-number">1</div>
+                    <div class="stage-content">
+                        <h3>Foundation Building</h3>
+                        <p>Number sense, basic operations, and confidence with core concepts</p>
+                        <div class="stage-icon">
+                            <i class="fas fa-cubes"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-stage" data-aos="fade-left" data-aos-delay="200">
+                    <div class="stage-number">2</div>
+                    <div class="stage-content">
+                        <h3>Concept Mastery</h3>
+                        <p>Fractions, decimals, patterns, and mathematical thinking</p>
+                        <div class="stage-icon">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-stage" data-aos="fade-right" data-aos-delay="300">
+                    <div class="stage-number">3</div>
+                    <div class="stage-content">
+                        <h3>Problem Solving</h3>
+                        <p>Multi-step problems, logical reasoning, and exam preparation</p>
+                        <div class="stage-icon">
+                            <i class="fas fa-puzzle-piece"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- HOW IT WORKS -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <div class="section-subtitle">Simple Process</div>
+                <h2>How It Works</h2>
+                <p style="max-width: 600px; margin: 0 auto;">From first contact to celebrating success, we make it easy</p>
+            </div>
+            <div class="steps-grid">
+                <div class="step-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="step-number">1</div>
+                    <div class="step-icon"><i class="fas fa-clipboard-list"></i></div>
+                    <h3>Free Assessment</h3>
+                    <p>We assess your child's current level, identify gaps, and understand their learning style. No pressure, just discovery.</p>
+                </div>
+                <div class="step-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="step-number">2</div>
+                    <div class="step-icon"><i class="fas fa-user-check"></i></div>
+                    <h3>Perfect Tutor Match</h3>
+                    <p>We pair your child with a qualified tutor who understands primary maths and how to make it click. Personality matters too.</p>
+                </div>
+                <div class="step-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="step-number">3</div>
+                    <div class="step-icon"><i class="fas fa-chart-line"></i></div>
+                    <h3>Weekly Sessions & Progress</h3>
+                    <p>Regular 1-on-1 lessons following a customized plan. You'll see improvements in confidence and results week by week.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- WHAT YOU GET -->
+    <section class="section" style="background: #f8fafc;">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <div class="section-subtitle">Complete Support</div>
+                <h2>What You Get</h2>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="feature-icon"><i class="fas fa-route"></i></div>
+                    <h3>Individual Learning Plan</h3>
+                    <p>Custom roadmap based on your child's assessment, targeting exactly what they need to master.</p>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="feature-icon"><i class="fas fa-chalkboard-teacher"></i></div>
+                    <h3>Expert Tutor Matching</h3>
+                    <p>We carefully match your child with a tutor who understands their age, personality, and learning needs.</p>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="feature-icon"><i class="fas fa-book-open"></i></div>
+                    <h3>Lesson Notes & Resources</h3>
+                    <p>After each session, you'll receive notes on what was covered and activities to practice at home.</p>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="feature-icon"><i class="fas fa-tasks"></i></div>
+                    <h3>Progress Tracking</h3>
+                    <p>Regular check-ins ensure your child is improving. We adjust the plan as they grow stronger.</p>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="500">
+                    <div class="feature-icon"><i class="fas fa-home"></i></div>
+                    <h3>Homework Help</h3>
+                    <p>Tutors help with school homework and prepare your child for upcoming tests and assessments.</p>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="600">
+                    <div class="feature-icon"><i class="fas fa-comments"></i></div>
+                    <h3>Parent Communication</h3>
+                    <p>Stay informed with regular updates. We're always available to discuss your child's progress.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- SOCIAL PROOF -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <div class="section-subtitle">Success Stories</div>
+                <h2>What Parents Say</h2>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-content">"Our daughter went from tears over maths homework to asking for extra problems. Her confidence has completely transformed. The tutor is patient, encouraging, and really knows how to explain things at her level."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">SM</div>
+                        <div class="author-info">
+                            <strong>Sarah M.</strong>
+                            <small>Parent, Year 3 student</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-content">"The individual learning plan was a game-changer. They identified exactly where my son was struggling and built him up from there. He's now ahead of his class and actually enjoys maths time at school."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">JK</div>
+                        <div class="author-info">
+                            <strong>James K.</strong>
+                            <small>Parent, Year 4 student</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-content">"We love how they keep us in the loop. After every session we get a quick update on what they worked on. It's reassuring to see the progress in real-time. The tutor genuinely cares about our child's success."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">LT</div>
+                        <div class="author-info">
+                            <strong>Lisa T.</strong>
+                            <small>Parent, Year 5 student</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- GUARANTEE SECTION -->
+    <section class="section" style="background: linear-gradient(135deg, var(--ct-mint) 0%, white 100%);">
+        <div class="container">
+            <div class="guarantee-box" data-aos="zoom-in">
+                <div class="guarantee-icon">
+                    <i class="fas fa-shield-alt"></i>
+                </div>
+                <h2>Satisfaction Guarantee</h2>
+                <p>We're confident your child will benefit from our tutoring. If you're not completely satisfied after the first 3 lessons, we'll refund your payment in full. No questions asked.</p>
+                <div class="guarantee-features">
+                    <div class="guarantee-feature">
+                        <i class="fas fa-check-circle"></i>
+                        <span>First 3 lessons risk-free</span>
+                    </div>
+                    <div class="guarantee-feature">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Full refund if not satisfied</span>
+                    </div>
+                    <div class="guarantee-feature">
+                        <i class="fas fa-check-circle"></i>
+                        <span>No long-term contracts</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- FAQ -->
+    <section class="section" style="background: #f8fafc;">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <div class="section-subtitle">Common Questions</div>
+                <h2>Frequently Asked Questions</h2>
+            </div>
+            <div class="faq-container">
+                <div class="faq-item" data-aos="fade-up" data-aos-delay="100">
+                    <button class="faq-question">
+                        <span>What ages/year levels do you tutor?</span>
+                        <i class="fas fa-chevron-down faq-icon"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <div class="faq-answer-content">
+                            We tutor primary students from Year 1 through Year 6. Our tutors specialize in primary maths curriculum and understand the developmental stages of learning at this age.
+                        </div>
+                    </div>
+                </div>
+                <div class="faq-item" data-aos="fade-up" data-aos-delay="200">
+                    <button class="faq-question">
+                        <span>How long are the lessons?</span>
+                        <i class="fas fa-chevron-down faq-icon"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <div class="faq-answer-content">
+                            Standard lessons are 60 minutes, which is the ideal length for primary students to stay focused and engaged. We can adjust timing based on your child's needs and attention span.
+                        </div>
+                    </div>
+                </div>
+                <div class="faq-item" data-aos="fade-up" data-aos-delay="300">
+                    <button class="faq-question">
+                        <span>Can we do lessons online or must they be in person?</span>
+                        <i class="fas fa-chevron-down faq-icon"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <div class="faq-answer-content">
+                            We offer both in-person and online lessons. Many families find online works perfectly for primary students with the right setup. During the free assessment, we can discuss what's best for your situation.
+                        </div>
+                    </div>
+                </div>
+                <div class="faq-item" data-aos="fade-up" data-aos-delay="400">
+                    <button class="faq-question">
+                        <span>What if my child doesn't click with the tutor?</span>
+                        <i class="fas fa-chevron-down faq-icon"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <div class="faq-answer-content">
+                            We work hard to get the match right from the start, but if it's not working, we'll find a different tutor. Your child's comfort and progress are our top priorities.
+                        </div>
+                    </div>
+                </div>
+                <div class="faq-item" data-aos="fade-up" data-aos-delay="500">
+                    <button class="faq-question">
+                        <span>Is there a contract or can I cancel anytime?</span>
+                        <i class="fas fa-chevron-down faq-icon"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <div class="faq-answer-content">
+                            The 11-lesson package is term-based with no long-term contract. After your first term, you can continue, pause, or stop—whatever works for your family. We just ask for reasonable notice if you need to change your schedule.
+                        </div>
+                    </div>
+                </div>
+                <div class="faq-item" data-aos="fade-up" data-aos-delay="600">
+                    <button class="faq-question">
+                        <span>Do you help with homework and school tests?</span>
+                        <i class="fas fa-chevron-down faq-icon"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <div class="faq-answer-content">
+                            Absolutely. Tutors help with homework, prepare students for upcoming tests, and reinforce what's being taught in school. We coordinate with your child's curriculum to provide maximum support.
+                        </div>
+                    </div>
+                </div>
+                <div class="faq-item" data-aos="fade-up" data-aos-delay="700">
+                    <button class="faq-question">
+                        <span>How quickly will we see results?</span>
+                        <i class="fas fa-chevron-down faq-icon"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <div class="faq-answer-content">
+                            Most families notice improved confidence within 2-3 weeks. Academic results typically follow within 4-6 weeks as foundational skills strengthen. Every child progresses at their own pace, and we celebrate each milestone.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- FINAL CTA -->
+    <section class="section">
+        <div class="container">
+            <div class="cta-section" data-aos="zoom-in">
+                <div class="cta-content">
+                    <h2>Ready to See Your Child Succeed?</h2>
+                    <p>Start with a free assessment. No obligation. No pressure. Just expert guidance to help your child thrive in maths.</p>
+                    <button class="btn btn-secondary btn-pulse" onclick="openModal()" style="background: white; color: var(--ct-blue); border: none;">
+                        <i class="fas fa-rocket"></i>
+                        Book Your Free Assessment
+                    </button>
+                    <div style="margin-top: var(--spacing-md); display: flex; gap: var(--spacing-md); justify-content: center; flex-wrap: wrap;">
+                        <a href="tel:+61412345678" style="color: white; text-decoration: none; display: flex; align-items: center; gap: 0.5rem; transition: var(--transition-smooth);" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+                            <i class="fas fa-phone"></i> 0412 345 678
+                        </a>
+                        <a href="mailto:hello@canberratutoring.com.au" style="color: white; text-decoration: none; display: flex; align-items: center; gap: 0.5rem; transition: var(--transition-smooth);" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+                            <i class="fas fa-envelope"></i> hello@canberratutoring.com.au
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-links">
+                    <a href="#hero">Home</a>
+                    <a href="#how-it-works">How It Works</a>
+                    <a href="#testimonials">Reviews</a>
+                    <a href="#faq">FAQ</a>
+                    <a href="tel:+61412345678">Contact</a>
+                </div>
+                <p>&copy; 2026 Canberra Tutoring. All rights reserved.</p>
+                <div class="terms">
+                    <strong>Terms & Conditions:</strong> 11-lesson package at $55/lesson is valid for one school term and must be used within that term. Free assessment includes skills evaluation and learning plan creation. Optional written report available for $55. Lessons are non-refundable but can be rescheduled with 24 hours notice. Tutoring sessions are 60 minutes unless otherwise agreed. All tutors are qualified and have Working with Children Checks. Prices are in AUD and subject to change. This offer is term-limited and may be withdrawn at any time.
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- STICKY CTA BUTTON -->
+    <div class="sticky-cta">
+        <div class="sticky-cta-content">
+            <div class="sticky-cta-text">
+                <strong>Limited Offer:</strong> 11 Lessons for $55/lesson + Free Assessment
+            </div>
+            <button class="btn btn-primary" onclick="openModal()" style="padding: 0.75rem 1.5rem;">
+                Book Now
+            </button>
+        </div>
+    </div>
+    
+    <!-- FORM MODAL -->
+    <div class="modal" id="formModal">
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeModal()">
+                <i class="fas fa-times"></i>
+            </button>
+            
+            <div id="formContainer">
+                <h2 style="margin-bottom: var(--spacing-sm);">Book Your Free Assessment</h2>
+                <p style="margin-bottom: var(--spacing-lg);">Fill in your details and we'll be in touch within 24 hours to schedule your child's assessment.</p>
+                
+                <form id="leadForm" onsubmit="handleSubmit(event)">
+                    <div class="form-group">
+                        <label class="form-label">Parent/Guardian Name *</label>
+                        <input type="text" class="form-input" required placeholder="Your full name">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label class="form-label">Phone Number *</label>
+                        <input type="tel" class="form-input" required placeholder="0412 345 678">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label class="form-label">Email Address *</label>
+                        <input type="email" class="form-input" required placeholder="your@email.com">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label class="form-label">Child's Name *</label>
+                        <input type="text" class="form-input" required placeholder="Student's name">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label class="form-label">Current Year Level *</label>
+                        <select class="form-select" required>
+                            <option value="">Select year level</option>
+                            <option value="year1">Year 1</option>
+                            <option value="year2">Year 2</option>
+                            <option value="year3">Year 3</option>
+                            <option value="year4">Year 4</option>
+                            <option value="year5">Year 5</option>
+                            <option value="year6">Year 6</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label class="form-label">What are your main concerns? (Optional)</label>
+                        <textarea class="form-textarea" placeholder="e.g., struggling with times tables, lost confidence, needs exam prep..."></textarea>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary" style="width: 100%;">
+                        <i class="fas fa-paper-plane"></i>
+                        Submit Request
+                    </button>
+                </form>
+            </div>
+            
+            <div id="successState" class="success-state">
+                <div class="success-icon">
+                    <i class="fas fa-check"></i>
+                </div>
+                <h2>Thank You!</h2>
+                <p>We've received your request. Our team will contact you within 24 hours to schedule your child's free assessment.</p>
+                <p style="margin-top: var(--spacing-md);">
+                    <strong>Need immediate help?</strong><br>
+                    Call us at <a href="tel:+61412345678" style="color: var(--ct-blue);">0412 345 678</a>
+                </p>
+                <button class="btn btn-secondary" onclick="closeModal()" style="margin-top: var(--spacing-md);">
+                    Close
+                </button>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        // Initialize AOS
+        AOS.init({
+            duration: 800,
+            once: true,
+            offset: 100
+        });
+        
+        // Create particle effect for hero
+        function createParticles() {
+            const particlesContainer = document.getElementById('heroParticles');
+            const particleCount = 30;
+            
+            for (let i = 0; i < particleCount; i++) {
+                const particle = document.createElement('div');
+                particle.className = 'particle';
+                particle.style.left = Math.random() * 100 + '%';
+                particle.style.animationDelay = Math.random() * 10 + 's';
+                particle.style.animationDuration = (10 + Math.random() * 10) + 's';
+                particlesContainer.appendChild(particle);
+            }
+        }
+        
+        // Initialize particles on page load
+        createParticles();
+        
+        // Enhanced scroll animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -100px 0px'
+        };
+        
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+        
+        document.querySelectorAll('.section').forEach(section => {
+            observer.observe(section);
+        });
+        
+        // Enhanced sticky CTA with smooth appearance
+        let lastScroll = 0;
+        const stickyCta = document.querySelector('.sticky-cta');
+        
+        window.addEventListener('scroll', () => {
+            const currentScroll = window.pageYOffset;
+            
+            if (currentScroll > 800) {
+                stickyCta.classList.add('show');
+            } else {
+                stickyCta.classList.remove('show');
+            }
+            
+            lastScroll = currentScroll;
+        });
+        
+        // Enhanced FAQ accordion with smooth animations
+        document.querySelectorAll('.faq-question').forEach(button => {
+            button.addEventListener('click', () => {
+                const faqItem = button.parentElement;
+                const isActive = faqItem.classList.contains('active');
+                
+                // Close all FAQs with smooth animation
+                document.querySelectorAll('.faq-item').forEach(item => {
+                    if (item !== faqItem) {
+                        item.classList.remove('active');
+                    }
+                });
+                
+                // Open clicked FAQ if it wasn't active
+                if (!isActive) {
+                    faqItem.classList.add('active');
+                }
+            });
+        });
+        
+        // Enhanced modal functions
+        function openModal() {
+            const modal = document.getElementById('formModal');
+            modal.classList.add('active');
+            document.body.style.overflow = 'hidden';
+            
+            // Track button click event
+            if (typeof gtag !== 'undefined') {
+                gtag('event', 'form_open', {
+                    'event_category': 'engagement',
+                    'event_label': 'Free Assessment Form'
+                });
+            }
+        }
+        
+        function closeModal() {
+            const modal = document.getElementById('formModal');
+            modal.classList.remove('active');
+            document.body.style.overflow = '';
+            
+            // Reset form after closing with delay
+            setTimeout(() => {
+                document.getElementById('leadForm').reset();
+                document.getElementById('formContainer').style.display = 'block';
+                document.getElementById('successState').classList.remove('active');
+            }, 300);
+        }
+        
+        // Close modal when clicking outside
+        document.getElementById('formModal').addEventListener('click', (e) => {
+            if (e.target.id === 'formModal') {
+                closeModal();
+            }
+        });
+        
+        // Enhanced form submission with animation
+        function handleSubmit(event) {
+            event.preventDefault();
+            
+            // Track form submission event
+            if (typeof gtag !== 'undefined') {
+                gtag('event', 'form_submit', {
+                    'event_category': 'conversion',
+                    'event_label': 'Free Assessment Request'
+                });
+            }
+            
+            // Simulate form processing
+            const submitButton = event.target.querySelector('button[type="submit"]');
+            const originalText = submitButton.innerHTML;
+            submitButton.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Processing...';
+            submitButton.disabled = true;
+            
+            setTimeout(() => {
+                document.getElementById('formContainer').style.display = 'none';
+                document.getElementById('successState').classList.add('active');
+                submitButton.innerHTML = originalText;
+                submitButton.disabled = false;
+            }, 1500);
+        }
+        
+        // Track call clicks with enhanced analytics
+        document.querySelectorAll('a[href^="tel:"]').forEach(link => {
+            link.addEventListener('click', () => {
+                if (typeof gtag !== 'undefined') {
+                    gtag('event', 'phone_click', {
+                        'event_category': 'engagement',
+                        'event_label': 'Phone Call'
+                    });
+                }
+            });
+        });
+        
+        // Track email clicks
+        document.querySelectorAll('a[href^="mailto:"]').forEach(link => {
+            link.addEventListener('click', () => {
+                if (typeof gtag !== 'undefined') {
+                    gtag('event', 'email_click', {
+                        'event_category': 'engagement',
+                        'event_label': 'Email Contact'
+                    });
+                }
+            });
+        });
+        
+        // Add smooth reveal animation to numbers
+        function animateNumbers() {
+            const numbers = document.querySelectorAll('.result-number');
+            numbers.forEach(number => {
+                const finalValue = number.textContent;
+                const isPercentage = finalValue.includes('%');
+                const isDecimal = finalValue.includes('/');
+                let numericValue = parseFloat(finalValue.replace(/[^0-9.]/g, ''));
+                let currentValue = 0;
+                const increment = numericValue / 50;
+                
+                const updateNumber = () => {
+                    currentValue += increment;
+                    if (currentValue < numericValue) {
+                        if (isDecimal) {
+                            number.textContent = currentValue.toFixed(1) + finalValue.substring(finalValue.indexOf('/'));
+                        } else if (isPercentage) {
+                            number.textContent = Math.floor(currentValue) + '%';
+                        } else {
+                            number.textContent = Math.floor(currentValue);
+                        }
+                        requestAnimationFrame(updateNumber);
+                    } else {
+                        number.textContent = finalValue;
+                    }
+                };
+                
+                // Start animation when element is in view
+                const observer = new IntersectionObserver((entries) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            updateNumber();
+                            observer.unobserve(entry.target);
+                        }
+                    });
+                });
+                
+                observer.observe(number);
+            });
+        }
+        
+        // Initialize number animations
+        animateNumbers();
+    </script>
+</body>
+</html>
